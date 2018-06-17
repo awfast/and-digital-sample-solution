@@ -11,15 +11,6 @@ import java.util.*;
  */
 public class DataGenerator {
 
-    private Set<Customer> allCustomers;
-
-    public DataGenerator() {
-        this.allCustomers = generateDummyData();
-    }
-
-    public Set<Customer> getAllCustomers() {
-        return this.allCustomers;
-    }
     public Set<Customer> generateDummyData() {
         Set<Customer> dummyCustomersData = new HashSet<>();
 
