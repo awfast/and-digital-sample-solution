@@ -77,11 +77,6 @@ public class DemoServiceImpl implements DemoService {
 
         for(Customer customer: allCustomers) {
             if(customer.getId().equals(dto.getCustomerId()) && customer.getName().equals(dto.getName()))
-                /**
-                 * changing the status of the first phone number which the customer holds only
-                 * due to the fact that phone numbers are generated at random
-                 * and I have no means of comparing the randomly generated numbers
-                 */
                 customer.getPhoneDetails().get(0).setActive(dto.getStatus());
         }
     }
